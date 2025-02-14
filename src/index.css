@@ -6,12 +6,17 @@
 
 @layer components {
   .prose {
-    @apply text-white; /* This will apply text color to markdown content */
+    @apply text-white;
   }
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  text-rendering: optimizeLegibility;
 }
 
 @media (prefers-reduced-motion: no-preference) {

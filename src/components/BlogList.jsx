@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export const BlogList = () => {
 	const [posts, setPosts] = useState([]);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		const fetchPosts = async () => {
@@ -13,10 +14,20 @@ export const BlogList = () => {
 			} catch (error) {
 				console.error("Error fetching posts:", error);
 			}
+
+			setLoading(false);
 		};
 
 		fetchPosts();
 	}, []);
+
+	if (loading) {
+		return (
+			<p className="border text-white text-center text-3xl font-extrabold border-black/20 bg-black/30 rounded-lg backdrop-blur-3xl p-6 mb-3 shadow-lg w-full max-w-4xl mx-auto">
+				Loading...
+			</p>
+		);
+	}
 
 	return (
 		<section className="border text-white border-black/20 bg-black/30 rounded-lg backdrop-blur-3xl p-6 w-full max-w-4xl mx-auto">

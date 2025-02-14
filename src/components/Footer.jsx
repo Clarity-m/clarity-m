@@ -9,14 +9,14 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 export const Footer = () => {
 	return (
-		<footer className="fixed bottom-0 w-full bg-black/30 backdrop-blur-md text-white py-4 z-50">
+		<footer className="fixed bottom-0 w-full border border-black/20 bg-black/30 backdrop-blur-md text-white py-1 z-50">
 			<div className="max-w-[1200px] mx-auto px-4 flex justify-between items-center">
-				<p className="text-sm text-gray-100">© Copyright Clarity 2024. All rights reserved.</p>
+				<p className="text-sm text-gray-100">© Clarity/DEV. All rights reserved.</p>
 				<ul className="flex gap-4">
 					<a href="https://github.com/clarity-m" aria-label="GitHub" className="hover:text-gray-300">
 						<AiFillGithub size={24} />
 					</a>
-					<a href="https://x.com" aria-label="X (Twitter)" className="hover:text-gray-300">
+					{/* <a href="https://x.com" aria-label="X (Twitter)" className="hover:text-gray-300">
 						<AiOutlineTwitter size={24} />
 					</a>
 					<a href="https://facebook.com" aria-label="Facebook" className="hover:text-gray-300">
@@ -24,7 +24,7 @@ export const Footer = () => {
 					</a>
 					<a href="https://instagram.com" aria-label="Instagram" className="hover:text-gray-300">
 						<AiFillInstagram size={24} />
-					</a>
+					</a> */}
 					<a href="https://telegram.org/clarity_m" aria-label="Telegram" className="hover:text-gray-300">
 						<FaTelegramPlane size={24} />
 					</a>

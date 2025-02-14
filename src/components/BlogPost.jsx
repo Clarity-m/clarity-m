@@ -60,7 +60,7 @@ export const BlogPost = () => {
 				</div>
 			</article>
 
-			<article className="border text-white border-black/20 bg-black/30 rounded-lg backdrop-blur-3xl p-6 mb-12 shadow-lg">
+			<article className="border text-white border-black/20 bg-black/30 rounded-lg backdrop-blur-3xl p-6 mb-3 shadow-lg">
 				<ReactMarkdown
 					className="prose prose-invert mb-8 w-full max-w-4xl mx-auto"
 					children={content}

@@ -42,11 +42,15 @@ export const About = () => {
 	return (
 		<section
 			id="about"
-			className="border text-white border-black/20 bg-black/30 rounded-lg backdrop-blur-3xl p-6 mb-12 w-full max-w-4xl mx-auto"
+			className="border text-white border-black/20 bg-black/30 rounded-lg backdrop-blur-3xl p-6 mb-3 w-full max-w-4xl mx-auto"
 		>
 			<ReactMarkdown className="prose prose-invert text-white w-full max-w-4xl mx-auto">
 				{content}
 			</ReactMarkdown>
+
+			<div className="text-white w-full max-w-4xl mx-auto">
+				
+			</div>
 		</section>
 	);
 };
