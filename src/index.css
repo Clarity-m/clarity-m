@@ -19,12 +19,6 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
 body {
   font-family: "Poppins", sans-serif;
   /* background-image: url("/src/assets/industry-above.jpg"); */
@@ -33,5 +27,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #fff;
+  color: white;
+  background-color: black;
 }

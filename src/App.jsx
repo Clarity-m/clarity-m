@@ -26,7 +26,7 @@ function AppContent() {
 			{!isHome && <Navbar />}
 
 			<div
-				className={`flex items-center justify-center min-h-screen py-16 px-4 
+				className={`flex items-center justify-center min-h-screen py-16 px-4 overflow-hidden
 					${isHome ? "transition duration-500 ease-in-out transform backdrop-filter backdrop-blur-sm backdrop-brightness-50" : ""}`}
 			>
 				<Routes>
