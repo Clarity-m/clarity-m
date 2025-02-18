@@ -6,7 +6,7 @@ export const Hero = () => {
     <div className="relative overflow-hidden text-white">
       <div className="mx-auto">
         <div className="flex flex-col justify-center z-10">
-          <h1 className="text-6xl md:text-9xl font-extrabold">Clarity/DEV</h1>
+          <h1 className="text-6xl md:text-9xl font-extrabold">Claryx/DEV</h1>
           <span className="text-white text-xl md:text-2xl text-left pl-2">
             Myanmar Developer
           </span>

@@ -10,7 +10,7 @@ export const About = () => {
 	useEffect(() => {
 		const fetchContent = async () => {
 			try {
-				const res = await axios.get("https://clarity-daily-blogs.netlify.app/about.md");
+				const res = await axios.get("https://claryx-daily-blogs.netlify.app/about.md");
 				setContent(res.data);
 			} catch (error) {
 				console.error("Error loading content:", error);

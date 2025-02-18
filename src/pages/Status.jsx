@@ -68,8 +68,8 @@ export const Status = () => {
                             alt="Discord Avatar"
                             className="w-24 h-24 rounded-full border-4 border-white hover:border-blue-400 shadow-lg"
                         />
-                        <p className="text-3xl mt-2">Clarity</p>
-                        <p className="text-lg text-gray-300">@clarity_m</p>
+                        <p className="text-3xl mt-2">Claryx</p>
+                        <p className="text-lg text-gray-300">@claryx_m</p>
                     </div>
                 )}
                 <p className="text-lg">last seen recently</p>

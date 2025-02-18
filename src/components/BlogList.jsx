@@ -8,7 +8,7 @@ export const BlogList = () => {
 	useEffect(() => {
 		const fetchPosts = async () => {
 			try {
-				const response = await fetch("https://clarity-daily-blogs.netlify.app/blogs/blogPosts.json");
+				const response = await fetch("https://claryx-daily-blogs.netlify.app/blogs/blogPosts.json");
 				const data = await response.json();
 				setPosts(data);
 			} catch (error) {

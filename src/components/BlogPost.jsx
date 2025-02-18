@@ -14,7 +14,7 @@ export const BlogPost = () => {
 	useEffect(() => {
 		const fetchPost = async () => {
 			try {
-				const res = await fetch("https://clarity-daily-blogs.netlify.app/blogs/blogPosts.json");
+				const res = await fetch("https://claryx-daily-blogs.netlify.app/blogs/blogPosts.json");
 				const posts = await res.json();
 				const foundPost = posts.find((p) => p.slug === slug);
 
@@ -22,7 +22,7 @@ export const BlogPost = () => {
 
 				setPost(foundPost);
 
-				const contentRes = await fetch(`https://clarity-daily-blogs.netlify.app/blogs/${foundPost.slug}.md`);
+				const contentRes = await fetch(`https://claryx-daily-blogs.netlify.app/blogs/${foundPost.slug}.md`);
 				setContent(await contentRes.text());
 			} catch (error) {
 				console.error("Error loading post:", error);
